@@ -15,11 +15,11 @@ This repository holds the code for the I-SABR-SELECT framework, as described in 
 
 ### Installation
 I-SABR-SELECT can be installed using following command to get the development version:
-```
-
+```r
 remotes::install_github("WuLabMDA/I-SABR") 
 ```
 Alternatively, I-SABR-SELECT can be cloned using the following command:
+
 ``` r
 git clone https://github.com/WuLabMDA/I-SABR.git
 ```
