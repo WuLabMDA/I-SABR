@@ -14,14 +14,16 @@
 This repository holds the code for the I-SABR-SELECT framework, as described in [XXXXX]. 
 
 ### Installation
-I-SABR-SELECT can be installed using following command to get the development version:
-```r
-remotes::install_github("WuLabMDA/I-SABR") 
+To install the **development version** of I-SABR-SELECT using `pip`, run the following command:
+
+```bash
+pip install git+https://github.com/WuLabMDA/I-SABR.git
 ```
 Alternatively, I-SABR-SELECT can be cloned using the following command:
 
-``` r
+```bash
 git clone https://github.com/WuLabMDA/I-SABR.git
+cd I-SABR
 ```
 
 ### 1. **Model Training**
