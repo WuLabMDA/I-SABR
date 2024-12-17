@@ -13,7 +13,7 @@
 
 This repository holds the code for the I-SABR-SELECT framework, as described in [XXXXX]. 
 
-### Installation
+## Installation
 To install the **development version** of I-SABR-SELECT using `pip`, run the following command:
 
 ```bash
@@ -25,6 +25,8 @@ Alternatively, I-SABR-SELECT can be cloned using the following command:
 git clone https://github.com/WuLabMDA/I-SABR.git
 cd I-SABR
 ```
+
+## The repository contains the following files:
 
 ### 1. **Model Training**
 - **File**: `S1_Train_model.py`  
