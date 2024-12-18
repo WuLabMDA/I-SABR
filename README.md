@@ -5,10 +5,10 @@
 ![ISABRSelect](./Assests/Fig_1.jpg)
 
 ## Key Features
-- **Radiomics and Clinical Integration**: Combines 43 radiomic and 8 clinical predictors for precise patient stratification.
+- **Radiomics and Clinical Integration**: Combines 43 radiomic and 8 clinical predictors for precise treatment effect estimation.
 - **Counterfactual Reasoning**: Models treatment effects between SABR and I-SABR using individualized treatment effect (ITE) scores.
 - **Robust Feature Selection**: Implements swarm intelligence (grey wolf optimizer) and cross-validation to identify predictive features.
-- **External Validation**: Validated using data from the I-SABR randomized trial and STARS trial for generalizability.
+- **External Validation**: Validated using data from STARS trial for generalizability.
 - **Interpretability**: SHAP-based analysis quantifies the influence of clinical and radiomic predictors.
 
 This repository holds the code for the I-SABR-SELECT framework, as described in [XXXXX]. 
@@ -30,7 +30,7 @@ cd I-SABR
 
 ### 1. **Model Training**
 - **File**: `S1_Train_model.py`  
-- **Description**: Trains the machine learning models using bootstrapping, feature selection, and survival analysis. Implements Grey Wolf Optimizer for feature reduction.  
+- **Description**: Trains the machine learning models using repeated cross-validation, bootstrapping, feature selection, and survival analysis. Implements Grey Wolf Optimizer for feature reduction.  
 - **Inputs**: `ISABR_trial.csv`, `matched_id.csv`, `unmatched_id.csv`  
 - **Outputs**: Trained models and cross-validation results.
 
@@ -54,7 +54,7 @@ cd I-SABR
 
 ### 5. **SHAP Calculation**
 - **File**: `S5_SHAP_calculation.py`  
-- **Description**: Calculates SHAP values for feature importance analysis using Random Forest models. Identifies features contributing to treatment predictions.  
+- **Description**: Calculates SHAP values for feature importance analysis using linear regression model. Identifies features contributing to treatment predictions.  
 - **Inputs**: Trained models, validation data.  
 - **Outputs**: SHAP values for all features.
 
